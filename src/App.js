@@ -22,7 +22,6 @@ export default function App() {
         setShow(res.data);
         setSeasons(formatSeasons(res.data._embedded.episodes));
       })
-    fetchShow();
   }, []);
 
   const handleSelect = e => {
